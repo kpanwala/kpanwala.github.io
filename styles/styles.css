@@ -247,29 +247,6 @@ a.external:active {
     height: 100%;
 }
 
-
-/* #ResumeNav:hover {
-    background-color: #91beeb8c;
-    color: #ffffff;
-    border: 1px solid #91beeb8c;
-} */
-
-
-/* #ResumeNav::after {
-    background-color: #91beeb21;
-    height: 100%;
-    top: 0;
-    transform: skew(0deg);
-    transition-duration: 0.6s;
-    transform-origin: top left;
-    width: 0;
-}
-
-#ResumeNav:hover:after {
-    height: 100%;
-    width: 100%;
-} */
-
 #ResumeNav::before {
     background-color: rgb(28, 31, 30);
     transition: 0.3s ease-out;
@@ -277,7 +254,7 @@ a.external:active {
 
 #ResumeNav {
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(28, 31, 30);
+    border: 1px solid rgba(103, 156, 216, 0.753);
     transition: 0.2s 0.1s;
 }
 
