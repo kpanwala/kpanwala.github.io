@@ -43,7 +43,10 @@ body {
     position: relative;
 }
 
-.shift a:after {
+#AboutNav:after,
+#ExpNav:after,
+#WorkNav:after,
+#ConnectNav:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -56,17 +59,15 @@ body {
     width: 0;
 }
 
-.shift a:hover:after {
+#AboutNav:hover:after,
+#ExpNav:hover:after,
+#WorkNav:hover:after,
+#ConnectNav:hover:after {
     width: 100%;
     left: 0;
     color: #616E7C;
     text-decoration: none;
 }
-
-
-/* .nav-item.active{
-    border-bottom:2px solid #616E7C;
-  } */
 
 a:hover {
     color: white;
@@ -220,13 +221,11 @@ svg {
 
 a.external:active {
     text-decoration: none;
-    /* color:#cc9b13; */
 }
 
 .lang {
     color: #4875f0;
     position: absolute;
-    /* added */
     bottom: 0;
 }
 
@@ -242,8 +241,10 @@ a.external:active {
 }
 
 #ResumeNav {
-    border: 1px solid #ffffff;
-    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
     height: 100%;
 }
 
@@ -254,11 +255,11 @@ a.external:active {
 
 #ResumeNav {
     color: rgb(255, 255, 255);
-    border: 1px solid rgba(103, 156, 216, 0.753);
+    border: 1px solid rgba(106, 162, 226, 0.801);
     transition: 0.2s 0.1s;
 }
 
 #ResumeNav:hover {
-    background-color: #91beeb21;
+    background-color: #3f74a865;
     transition: 0.2s 0.1s;
 }
