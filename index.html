@@ -12,6 +12,7 @@
     <link rel="icon" href="./images/k.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -23,9 +24,11 @@
                     <img src="./images/k1.png" height="35px" width="35px">&emsp;<b>Kalp Panwala</b>
                 </a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                <button class="navbar-toggler x" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto shift navbar-right">
@@ -33,7 +36,7 @@
                                 class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link px-3" id="ExpNav" href="#Experience">Experience</a>
                         <a class="nav-item nav-link px-3" id="WorkNav" href="#Work">Work</a>
-                        <a class="nav-item nav-link px-3" id="ConnectNav" href="#Connect">Connect</a>
+                        <a class="nav-item nav-link px-4" id="ConnectNav" href="#Connect">Connect</a>
                         <a class="nav-link px-3" id="ResumeNav" href="./KalpResume.pdf" target="_blank"
                             download>Resume</a>
                     </div>
@@ -48,13 +51,16 @@
                 </div>
 
                 <div class="col-sm-7 " data-aos="fade-left" data-aos-duration="1000">
-                    <div class="container marginTop5">
-                        <h2 id="intro">Hi, My name is </h2>
+                    <div class="container marginTop10">
+                        <h2 id="intro">Hola, My name is </h2>
                         <h1 id="name">Kalp Panwala.</h1>
+
                         <br>
-                        <h3 id="shortDetail">
-                            <p>I love making WebApps. </p>
-                        </h3>
+                        <h5 id="shortDetail">
+                            <p>I am from Surat, India.</p>
+                            <p> Along with making rich intuitive WebApps, I really enjoy providing insights, analyse
+                                trends in data using Data Science and Machine Learning. </p>
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -121,7 +127,7 @@
                 </div>
             </div>
             <br><br>
-            <div class="container">
+            <div class="container-fluid">
                 <span class="inline">
                     <h1 id="Experience">Experience</h1>
                     <hr class="style-two">
@@ -132,14 +138,15 @@
                 <div class="row justify-content-center">
                     <div class="tab col-lg-3 col-md-3 col-sm-3">
                         <div data-aos="fade-up">
-                            <button class="tablinks" onclick="openCity(event, 'Boa')" id="defaultOpen">Bank Of
+                            <button class="tablinks" onclick="openFunc(event, 'Boa')" id="defaultOpen">Bank Of
                                 America</button>
-                            <button class="tablinks" onclick="openCity(event, 'Edunomics')">Edunomics</button>
-                            <button class="tablinks" onclick="openCity(event, 'Finnacle')">Finnacle</button>
+                            <button class="tablinks" onclick="openFunc(event, 'Edunomics')">Edunomics</button>
+                            <button class="tablinks" onclick="openFunc(event, 'Finnacle')">Finnacle</button>
+                            <button class="tablinks" onclick="openFunc(event, 'Sparsh')">Sparsh 2K19</button>
                         </div>
                     </div>
 
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 marginTop5">
                         <div data-aos="fade-up">
                             <div id="Boa" class="tabcontent">
                                 <h3>Incoming Sr. Tech Associate</h3>
@@ -168,12 +175,23 @@
                                 </ul>
                                 </p>
                             </div>
+
+                            <div id="Sparsh" class="tabcontent">
+                                <h3>Memeber of Web Development Committee</h3>
+                                <p>
+                                <ul class="gap bullet">
+                                    <li>Developed Website of SPARSH (Gujarat’s largest Techno-Cultural
+                                        fest) along with the team. </li>
+                                    <li>Worked upon Front End of the website.</li>
+                                </ul>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="container-fluid">
+            <div class="container-fluid marginTop10">
                 <span class="inline">
                     <h1 id="Work">Work
                         <hr class="style-two">
@@ -355,79 +373,207 @@
                     </div>
                 </div>
 
-
+                <h3 id="projects">
+                    Articles
+                </h3>
                 <br>
-                <br>
-
-                <div class="container-fluid">
-                    <span class="inline">
-                        <h1 id="Connect">Connect</h1>
-                        <hr class="style-two">
-                        <br>
-                        <br>
-                    </span>
-                    
-                    <div class="container-fluid">
-                    <footer class="bg-dark text-white">
-                        <!-- Grid container -->
-                        <div class="container-fluid p-4 ">
-                            <div class="row">
-                            <div class="col-lg-4 text-center">
-                                <p style="font-size: 1.3em;">Call me</p>
-                                <a  href="tel:+918156004040">+91-8156004040</a>
-                                
-                            </div>
-
-                            <div class="col-lg-4 text-center">
-                                <p style="font-size: 1.3em;">Mail me</p>
-                                <a href="mailto:kpanwala33@gmail.com">kpanwala33@gmail.com</a>
-                            </div>
-
-                            <div class="col-lg-4 text-center">
-                                <p style="font-size: 1.3em;">Follow</p>
-                                <!-- Section: Social media -->
-                                <section class="mb-4">
-                            
-                                    <!-- Twitter -->
-                                    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/PanwalaKalp" target="_blank" role="button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                
+                <div class="card-deck">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="icon-card">
+                                <div>
+                                    <a href="https://medium.com/analytics-vidhya/understanding-deep-learning-requires-rethinking-generalization-7e7759eb6035"
+                                        aria-label="External Link" class="external" rel="noopener noreferrer"
+                                        target="_blank">
+                                        <svg class="float-right" xmlns="http://www.w3.org/2000/svg" role="img"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-external-link">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
                                     </a>
+                                    <span>Understanding Deep Learning requires rethinking Generalization</span>
+                                </div>
+                                <br>
 
-                                    <!-- Instagram -->
-                                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/its_me_kalp/" target="_blank" role="button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                                    </a>
-
-                                    <!-- Linkedin -->
-                                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/kalp-panwala-72284018a/" target="_blank" role="button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>    
-                                    </a>
-
-                                    <!-- Github -->
-                                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/kpanwala" target="_blank" role="button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                                    </a>
-                                </section>
-                            </div>
-                            <!-- Section: Social media -->
+                                <p class="card-text">I talked about the paper <b>"<i>Understanding deep learning
+                                            requires rethinking generalization</i>"</b>.
+                                </p>
                             </div>
                         </div>
-                        <!-- Grid container -->
+                    </div>
 
-                        <!-- Copyright -->
-                        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                            © <span id="copyright"></span> by 
-                            <span class="text-white" href="">Kalp Panwala</span>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="icon-card">
+                                <div>
+                                    <a href="https://medium.com/analytics-vidhya/advanced-house-price-prediction-kaggle-competition-adefb458d201"
+                                        aria-label="External Link" class="external" rel="noopener noreferrer"
+                                        target="_blank">
+                                        <svg class="float-right" xmlns="http://www.w3.org/2000/svg" role="img"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-external-link">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                    <span>Advanced House Price Prediction Kaggle Competition</span>
+                                </div>
+                                <br>
+
+                                <p class="card-text">Here I talked about approach to solution of House Price Advanced
+                                    Regression Techniques Kaggle Competition.
+                                </p>
+                            </div>
                         </div>
-                        <!-- Copyright -->
-                    </footer>
-                </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="icon-card">
+                                <div>
+                                    <a href="https://medium.com/analytics-vidhya/how-to-scrape-https-sites-in-python-beautifulsoup-a08374af960d"
+                                        aria-label="External Link" class="external" rel="noopener noreferrer"
+                                        target="_blank">
+                                        <svg class="float-right" xmlns="http://www.w3.org/2000/svg" role="img"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-external-link">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                    <span>How to Scrape HTTPS sites in python (BeautifulSoup)</span>
+                                </div>
+                                <br>
+
+                                <p class="card-text">In this article, I discussed about how to scrape https sites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <br>
+    <br>
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="width:100%; height:20vh;" viewBox="0 0 1440 320"
+        preserveAspectRatio="none">
+        <path fill="#343a40" fill-opacity="1"
+            d="M0,96L34.3,117.3C68.6,139,137,181,206,186.7C274.3,192,343,160,411,165.3C480,171,549,213,617,202.7C685.7,192,754,128,823,90.7C891.4,53,960,43,1029,80C1097.1,117,1166,203,1234,208C1302.9,213,1371,139,1406,101.3L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+        </path>
+    </svg>
+    <footer class="bg-dark text-white">
+        <div class="p-2" id="Connect">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <p style="font-size: 1.3em;">Follow</p>
+
+                    <section class="mb-4">
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/PanwalaKalp"
+                            target="_blank" role="button" alt="twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-twitter">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </a>
+
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/its_me_kalp/"
+                            target="_blank" role="button" alt="instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-instagram">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+
+
+                        <a class="btn btn-outline-light btn-floating m-1"
+                            href="https://www.linkedin.com/in/kalp-panwala-72284018a/" target="_blank" role="button"
+                            alt="linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-linkedin">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/kpanwala"
+                            target="_blank" role="button" alt="github">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://medium.com/@kpanwala33"
+                            target="_blank" role="button" alt="medium.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 50 50" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <path xmlns="http://www.w3.org/2000/svg"
+                                    d="M 3 6 L 7 11.091797 L 7 35.285156 L 1 43 L 15 43 L 9 35.285156 L 9 13.75 L 22 43 L 21.998047 43.013672 L 34 13.544922 L 34 39 L 30 43 L 47 43 L 43 39 L 42.972656 10.503906 L 46.863281 6.0136719 L 34.845703 6.0136719 L 25.605469 28.744141 L 15.496094 6 L 3 6 z" />
+                            </svg>
+                        </a>
+                    </section>
+                </div>
+                <div class="col-lg-4 text-center marginBottom5">
+                    <span style="display:inline-block;">
+                        <i class="fa fa-phone" style="font-size:24px"></i>&nbsp;
+                        <p style="font-size: 1.3em; display:inline-block;">Call me</p>
+                    </span>
+
+                    <a style="display:block;" href="tel:+918156004040">+91-8156004040</a>
+                </div>
+
+                <div class="col-lg-4 text-center marginBottom5">
+                    <span style="display:inline-block;">
+                        <i class="fa fa-envelope-open" style="font-size:24px"></i>&nbsp;
+                        <p style="font-size: 1.3em; display:inline-block;">Mail me</p>
+                    </span>
+
+                    <a style="display:block;" href="mailto:kpanwala33@gmail.com">kpanwala33@gmail.com</a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © <span id="copyright"></span> by
+            <span class="text-white" href="">Kalp Panwala</span>
+        </div>
+
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
         AOS.init({
 
@@ -453,7 +599,7 @@
             var aboutTop = Math.floor($('#AboutMe').offset().top);
             var experienceTop = Math.floor($('#Experience').offset().top);
             var workTop = Math.floor($('#Work').offset().top);
-            var connectTop = Math.floor($('#Connect').offset().top);
+            // var connectTop = Math.floor($('#Connect').offset().top);
 
 
 
@@ -469,15 +615,17 @@
 
                     check();
                     $('#ExpNav').addClass('active');
-                } else if (scrollTop >= workTop && scrollTop <= connectTop) {
+                } else if (scrollTop >= workTop) {
 
                     check();
                     $('#WorkNav').addClass('active');
-                } else if (scrollTop >= connectTop) {
+                }
+                //  else if (scrollTop >= connectTop) {
 
-                    check();
-                    $('#ConnectNav').addClass('active');
-                } else {
+                //     check();
+                //     $('#ConnectNav').addClass('active');
+                // }
+                else {
 
                     check();
                     $('#AboutNav').addClass('active');
@@ -495,12 +643,12 @@
             if ($('#WorkNav').hasClass('active')) {
                 $('#WorkNav').removeClass('active');
             }
-            if ($('#ConnectNav').hasClass('active')) {
-                $('#ConnectNav').removeClass('active');
-            }
+            // if ($('#ConnectNav').hasClass('active')) {
+            //     $('#ConnectNav').removeClass('active');
+            // }
         }
 
-        function openCity(evt, cityName) {
+        function openFunc(evt, cityName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
