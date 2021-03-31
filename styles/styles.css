@@ -1,3 +1,16 @@
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+    margin:auto;
+}
+
+#duration{
+    padding-left:3vw;
+    color:#9E9E9E;
+}
+
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
@@ -24,14 +37,13 @@
     backdrop-filter: blur(5px);
     position: fixed;
     width: 100vw;
-    z-index: 1000;
+    z-index: 100;
 }
 
 body {
     background: rgba(0, 0, 0, 0.95);
     color: white;
     position: absolute;
-    overflow-x: hidden;
 }
 
 .shift a {
@@ -149,50 +161,6 @@ hr.style-two {
     box-shadow: 2px 2px #888888;
 }
 
-.tab {
-    float: left;
-    /* background-color: #f1f1f1; */
-    background: inherit;
-    backdrop-filter: blur(5px);
-    width: 30%;
-    color: #888888;
-    height: 300px;
-}
-
-
-/* Style the buttons inside the tab */
-
-.tab button {
-    display: block;
-    color: rgb(153, 139, 139);
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-    border-left: 2px solid white;
-}
-
-.tab button.active {
-    color: #ffffff;
-    font-size: 1.2em;
-}
-
-.tabcontent {
-    float: left;
-    padding: 0px 12px;
-    width: 100%;
-    border-left: none;
-    height: 300px;
-}
-
-.tablinks {
-    background-color: inherit;
-    letter-spacing: 0.15em;
-}
 
 .gap li {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -213,6 +181,7 @@ ul.bullet {
 .card {
     background: rgba(54, 52, 52, 0.35);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    max-width: 70vw;
 }
 
 svg {
@@ -229,13 +198,6 @@ a.external:active {
     color: #4875f0;
     position: absolute;
     bottom: 0;
-}
-
-.card-deck {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: .5rem;
-    margin: auto;
 }
 
 .card-title {
@@ -339,5 +301,122 @@ footer{
     height: 100%;
 }
 
-footer{
-width:100vw;
+/* for desktop screens */
+@media (min-width: 800px) {  
+
+    .tab {
+        float: left;        
+        background: inherit;
+        backdrop-filter: blur(5px);
+        width: 30%;
+        color: #888888;
+        height: 300px;
+    }
+
+    .tab button {
+        display: block;
+        color: rgb(153, 139, 139);
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        border-left: 2px solid white;
+    }
+    
+    .tab button.active {
+        color: #ffffff;
+        font-size: 1.2em;
+    }
+    
+    .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        width: 100%;
+        border-left: none;
+        height: 300px;
+    }
+    
+    .tablinks {
+        background-color: inherit;
+        letter-spacing: 0.15em;
+        display:inline-block;  
+    }
+}
+
+/* for mobile screens */
+@media (max-width:800px){
+    .card-deck {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: .5rem;
+        margin-left:4vw;
+    }
+
+    .tab {        
+        background: inherit;
+        backdrop-filter: blur(5px);
+        color: #888888;
+        display:inline-table;
+        overflow: auto;
+    }
+
+    .tab button.active {
+        color: #ffffff;
+        font-size: 1em;
+        border-bottom: 2px solid white;
+    }
+
+    .tab button {
+        display:inline-table;
+        color: rgb(153, 139, 139);
+        padding: 5px 5px;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 0.8em;
+        
+    }
+
+    .row.tab {
+        display: flex;
+        overflow: auto;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        display:inline-block;  
+        padding: 0px 15px;
+        border-left: 0px;
+        text-align: center;
+    }
+
+    .tablinks {
+        background-color: inherit;
+        letter-spacing: 0.15em;
+        display:inline-block;  
+    }
+
+    .tabcontent {
+        float: left;
+        padding: 0px 7px;
+        width: 100%;
+        border-left: none;
+        height: auto;
+    }
+
+    #Experience,#AboutMe,#Work{
+        font-size: 1.7em;
+    }
+
+    #projects,#articles{
+        font-size: 1.5em;
+    }    
+}
+
+
