@@ -348,6 +348,9 @@ footer{
 
 /* for mobile screens */
 @media (max-width:800px){
+    .img2{
+        display: none;
+    }
     .card-deck {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
