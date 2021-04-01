@@ -33,9 +33,9 @@
 }
 
 .navbar {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
-    position: fixed;
+    position: sticky;
     width: 100vw;
     z-index: 100;
 }
@@ -115,8 +115,10 @@ a:hover {
 }
 
 #shortDetail {
-    font-size: clamp(20px, 2vw, 80px);
-    color: #a7a1a1;
+    font-size: clamp(20px, 2vw, 40px);
+    font-weight: normal;
+    color: #948b8b;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 #detail {
@@ -160,7 +162,6 @@ hr.style-two {
     box-shadow: 2px 2px #888888;
 }
 
-
 .gap li {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.1em;
@@ -169,8 +170,20 @@ hr.style-two {
 }
 
 ul.bullet {
-    list-style-type: square;
+    list-style: none;
+    color: #b5b3a8;
 }
+  
+ul.bullet li::before {
+    content: "\25BA";  
+    color: #4875f0; 
+    display: inline-block; 
+    width: 1.2em;
+    /* margin-left: -0.9em; */
+    font-weight: 10;
+    font-size:1.5rem;
+}
+
 
 .card-text {
     color: rgb(161, 155, 155);
@@ -183,10 +196,14 @@ ul.bullet {
     max-width: 70vw;
 }
 
-svg {
+#redir {
     width: 22px;
     height: 22px;
-    margin-top: -4px;
+    margin-bottom: -10px;
+}
+
+#wave{
+    margin-bottom: -10px;
 }
 
 a.external:active {
@@ -348,6 +365,10 @@ footer{
 
 /* for mobile screens */
 @media (max-width:800px){
+    .skills{
+        margin-left: -15vw;
+    }
+    
     .img2{
         display: none;
     }
@@ -425,4 +446,10 @@ footer{
     display:block;
     color:white;
     text-decoration: none;
+}
+
+#media_icon{
+    width: 22px;
+    height: 22px;
+    margin-top: -4px;
 }
