@@ -6,14 +6,10 @@
     <meta charset="utf-8" name="theme-color" content="#eb8334">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="icon" href="./images/k.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -79,13 +75,13 @@
                     <br>
                     <div id="detail">
                         <div data-aos="fade-right" data-aos-duration="1000">
-                            <p>Currently I am UnderGrad at NIT-Surat (SVNIT) pursuing Computer Engineering (2021-Batch).
-                                <br>
-                            <p>I love analyzing the trends in data and to prepare a model which can accurately predict
-                                the outcome. Making highly optimized, efficient applications and automating human work
-                                is my top priority. </p>
-                            <p>I have done Web Development and also have explored various Machine Learning domains. I
-                                have deep interest in the field of Machine Learning and Deep Learning .</p>
+                            <p>I am Software Engineer 1 at Bank Of America.</p>
+                            <p>I completed my Bachelors in Computer Engineering from NIT-Surat (SVNIT)(2021-Batch).</p>
+                            <p>Currently I work on Angular and have worked upon creating various components and in-house libraries.</p>
+                            <p>Apart from that I love analyzing the trends in data and to prepare a model which can accurately predict
+                                the outcome. I have explored various Machine Learning domains. I have deep interest in the field of Machine Learning and Deep Learning.</p>
+                            <p>Making highly optimized, efficient applications and automating human work
+                                is my top priority. 
                             </p>
                             <p>Here are a few technologies and domains I've been working with recently:</p>
                         </div>
@@ -96,6 +92,7 @@
                                     <div data-aos="fade-right" data-aos-duration="1000">
                                         <ul class="bullet">
                                             <li>Java</li>
+                                            <li>Angular</li>
                                             <li>Python</li>
                                             <li>Data Science</li>
                                             <li>Machine Learning</li>
@@ -138,9 +135,9 @@
                 <div class="row justify-content-center">
                     <div class="tab col-lg-3">
                         <div data-aos="fade-up">
-<!--                             <button class="tablinks" onclick="openFunc(event, 'Boa')" id="defaultOpen">Bank Of
-                                America</button> -->
-                            <button class="tablinks" id="defaultOpen" onclick="openFunc(event, 'Edunomics')">Edunomics</button>
+                            <button class="tablinks" onclick="openFunc(event, 'Boa')" id="defaultOpen">Bank Of
+                                America</button>
+                            <button class="tablinks" onclick="openFunc(event, 'Edunomics')">Edunomics</button>
                             <button class="tablinks" onclick="openFunc(event, 'Finnacle')">Finnacle</button>
                             <button class="tablinks" onclick="openFunc(event, 'Sparsh')">Sparsh</button>
                         </div>
@@ -148,29 +145,32 @@
 
                     <div class="col-lg-8 col-md-8 col-sm-8 marginTop5">
                         <div data-aos="fade-up">
-<!--                             <div id="Boa" class="tabcontent">
-                                <h5>Incoming Sr. Tech Associate</h5>
-                                <h6 id="duration">Joining July 2021</h6>
-                                <ul class="gap bullet">
-                                    <li>I will be joining Bank Of America as Sr. Tech Associate in July-2021.
-                                    </li>
-                                    </p>
-                            </div> -->
+                            <div id="Boa" class="tabcontent">
+                                <h5>Software Engineer 1</h5>
+                                <h6 class="duration" id="sde1" onload="getDurationTime()"></h6>
+                                <p>
+                                    <ul class="gap bullet">
+                                        <li>I work on Angular and have worked upon creating various components and in-house libraries.</li>
+                                        <li>I also worked upon SSIS which is an ETL tool.</li>
+                                    </ul>
+                                </p>
+                            </div>
 
                             <div id="Edunomics" class="tabcontent">
                                 <h5>Machine Learning Intern</h5>
-                                <h6 id="duration">June 2020 - July 2020</h6>
+                                <h6 class="duration">June 2020 - July 2020</h6>
                                 <p>
-                                <ul class="gap bullet">
-                                    <li>Collaborated closely with team to implement highly optimized model for Contract
-                                        Extraction and Summarization.
-                                    </li>
-                                    </p>
+                                    <ul class="gap bullet">
+                                        <li>Collaborated closely with team to implement highly optimized model for Contract
+                                            Extraction and Summarization.
+                                        </li>
+                                    </ul>
+                                </p>
                             </div>
 
                             <div id="Finnacle" class="tabcontent">
                                 <h5>Software Developer Intern</h5>
-                                <h6 id="duration">May 2019 - July 2019</h6>
+                                <h6 class="duration">May 2019 - July 2019</h6>
                                 <p>
                                 <ul class="gap bullet">
                                     <li>Implemented Automated attendance System using QR Scanner in Android.</li>
@@ -181,7 +181,7 @@
 
                             <div id="Sparsh" class="tabcontent">
                                 <h5>Memeber of Web Development Committee</h5>
-                                <h6 id="duration">Dec 2018 - March 2019</h6>
+                                <h6 class="duration">Dec 2018 - March 2019</h6>
                                 <p>
                                 <ul class="gap bullet">
                                     <li>Developed Website of SPARSH (Gujarat’s largest Techno-Cultural
@@ -576,102 +576,12 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script>
-        AOS.init({
-
-            disable: false,
-            startEvent: 'DOMContentLoaded',
-            initClassName: 'aos-init',
-            animatedClassName: 'aos-animate',
-            useClassNames: false,
-            disableMutationObserver: false,
-            debounceDelay: 50,
-            throttleDelay: 99,
-            offset: 120,
-            delay: 0,
-            duration: 1000,
-            easing: 'ease',
-            once: true,
-            mirror: false,
-            anchorPlacement: 'top-bottom',
-        });
-
-        $(document).ready(function () {
-            var scrollTop = 0;
-            var aboutTop = Math.floor($('#AboutMe').offset().top);
-            var experienceTop = Math.floor($('#Experience').offset().top);
-            var workTop = Math.floor($('#Work').offset().top);
-            // var connectTop = Math.floor($('#Connect').offset().top);
-
-
-
-            $(window).scroll(function () {
-                scrollTop = $(window).scrollTop();
-
-                if (scrollTop >= aboutTop && scrollTop <= experienceTop) {
-
-                    check();
-                    $('#AboutNav').addClass('active');
-
-                } else if (scrollTop >= experienceTop && scrollTop <= workTop) {
-
-                    check();
-                    $('#ExpNav').addClass('active');
-                } else if (scrollTop >= workTop) {
-
-                    check();
-                    $('#WorkNav').addClass('active');
-                }
-                else {
-
-                    check();
-                    $('#AboutNav').addClass('active');
-                }
-            });
-
-
-            $(document).click(function (event) {
-                var clickover = $(event.target);
-                var _opened = $(".navbar-collapse").hasClass("show");
-                if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-                    $(".navbar-toggler").click();
-                }
-            });
-
-        });
-
-        function check() {
-            if ($('#AboutNav').hasClass('active')) {
-                $('#AboutNav').removeClass('active');
-            }
-            if ($('#ExpNav').hasClass('active')) {
-                $('#ExpNav').removeClass('active');
-            }
-            if ($('#WorkNav').hasClass('active')) {
-                $('#WorkNav').removeClass('active');
-            }
-        }
-
-        function openFunc(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        document.getElementById("defaultOpen").click();
-
-        document.getElementById("copyright").innerHTML = new Date().getFullYear();
-
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <!-- <script>
+        
+    </script> -->
 </body>
 
 </html>
