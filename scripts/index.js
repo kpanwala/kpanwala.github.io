@@ -91,7 +91,7 @@ document.getElementById("defaultOpen").click();
 
 document.getElementById("copyright").innerHTML = new Date().getFullYear();
 
-document.getElementById("sde1").innerHTML= "Present - July 2021 "+getTimeDiff(new Date('2021-06-30'));
+document.getElementById("bofa").innerHTML= "Present - July 2021 "+getTimeDiff(new Date('2021-06-30'));
 
 function getTimeDiff(dt2) 
 {
@@ -118,7 +118,3 @@ function getTimeDiff(dt2)
 
     return msg;
 }
-
-// function getDurationTime(){
-    
-// }

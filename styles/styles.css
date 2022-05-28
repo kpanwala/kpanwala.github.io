@@ -1,3 +1,6 @@
+body{
+overflow-x: hidden;
+}
 
 .card-deck {
     display: grid;
@@ -35,7 +38,7 @@
 .navbar {
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
-    position: sticky;
+    position: fixed;
     width: 100vw;
     z-index: 100;
 }
@@ -126,8 +129,16 @@ a:hover {
     color: #9E9E9E;
 }
 
+.marginTop3_3 {
+    margin-top: 3.3rem;
+}
+
+.marginTop1_5{
+    margin-top: 1.5rem;
+}
+
 .marginTop5 {
-    margin-top: 5vh;
+    margin-top: 5rem;
 }
 
 .marginTop10 {
@@ -136,7 +147,10 @@ a:hover {
 
 .marginLeft5 {
     margin-left: 5vw;
-    ;
+}
+
+.margin5{
+    margin:5rem;    
 }
 
 hr.style-two {
